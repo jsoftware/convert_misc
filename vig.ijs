@@ -1,6 +1,8 @@
 NB. convert/misc/vig
 NB. Vigenere cipher with optional encoding
 NB. version: 1.0.0
+NB.
+NB. defines vig conjunction and related verbs
 
 NB.*vig c Vigenère cipher
 NB. cipher=. key 0 vig charset plain
