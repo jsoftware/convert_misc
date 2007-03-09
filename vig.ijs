@@ -1,5 +1,5 @@
 NB. convert/misc/vig
-NB. Vigenère cipher with optional encoding
+NB. Vigenere cipher with optional encoding
 NB. version: 1.0.0
 
 NB.*vig c Vigenère cipher
