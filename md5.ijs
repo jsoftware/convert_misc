@@ -1,6 +1,6 @@
 NB. convert/misc/md5
 NB. RSA Data Security, Inc. MD5 Message-Digest Algorithm
-NB. version: 1.0.1
+NB. version: 1.0.2
 NB.
 NB. See RFC 1321 for license details
 NB. J implementation -- (C) 2003 Oleg Kobchenko;
@@ -65,6 +65,8 @@ b=. ((j { b) or (8*4|i) sh 128) (j=._2 sh i=.#y) } b
 _16]\ (8 * #y) (n-2) } b
 )
 
+NB.*md5 v MD5 Message-Digest Algorithm
+NB.  diagest=. md5 message
 md5=: 3 : 0
 X=. norm y
 q=. r=. 1732584193 _271733879 _1732584194 271733878
