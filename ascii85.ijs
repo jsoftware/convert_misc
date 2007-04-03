@@ -9,7 +9,6 @@ NB.   fromascii85   from asci855 representation
 NB.
 NB. The encoding does not begin with '<~', though sometimes 
 NB. that is allowed. However PDF files do not accept this prefix.
-NB.
 NB. Decoding does support the prefix.
 
 NB. =========================================================
