@@ -1,13 +1,13 @@
 NB. convert/misc/vig
-NB. Vigenere cipher with optional encoding
-NB. version: 1.0.0
-NB.
+NB. Vigenère cipher with optional encoding
+NB. version: 1.0.1
+NB. ref: http://www.jsoftware.com/jwiki/Addons/convert/misc/vig
+
 NB. defines vig conjunction and related verbs
 
 NB.*vig c Vigenère cipher
 NB. cipher=. key 0 vig charset plain
 NB. plain=. key 1 vig charset cipher
-
 vig=: 2 : 0
 :
   r=. (#y) $ n i.x
@@ -26,7 +26,7 @@ vigascii=: vig a.
 NB. base64 encoded
 vig64=: 1 : 0
 :
-  require '~system\packages\misc\base64.ijs'
+  require 'convert\misc\base64'
   mv=. m vigascii
   x (_64 ]\ tobase64@mv)`(mv frombase64@(, -. CRLF,' '"_))@.m y
 )
@@ -34,7 +34,7 @@ vig64=: 1 : 0
 NB. ascii85 encoded
 vig85=: 1 : 0
 :
-  require '~system\packages\misc\ascii85.ijs'
+  require 'convert\misc\ascii85'
   mv=. m vigascii
   x (toascii85@mv)`(mv fromascii85)@.m y
 )

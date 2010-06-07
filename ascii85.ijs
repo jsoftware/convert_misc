@@ -1,18 +1,18 @@
 NB. convert/misc/ascii85
-NB. convert to/from ascii85 representation
+NB. Convert to/from ascii85 representation
 NB. version: 1.0.0
-NB. 
+NB. The encoding does not begin with <~, though sometimes 
+NB. this is allowed. However PDF files do not accept this prefix.
+NB. Decoding does support the prefix.
+
 NB. defines:
 NB.
 NB.   toascii85     to ascii85 representation
 NB.   fromascii85   from asci855 representation
 NB.
-NB. The encoding does not begin with <~, though sometimes 
-NB. this is allowed. However PDF files do not accept this prefix.
-NB. Decoding does support the prefix.
 
 NB. =========================================================
-NB. encode to ascii85
+NB.*toascii85 v Encode to ascii85 representation
 NB. returns lines of length no more than 75 + LF
 toascii85=: 3 : 0
 r=. ,y
@@ -30,6 +30,7 @@ r=. }: ,(_75 [\ r),.LF
 )
 
 NB. =========================================================
+NB.*fromascii85 v Decodes an ascii85 representation
 fromascii85=: 3 : 0
 r=. ,y
 r=. a.i.r
