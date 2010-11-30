@@ -1,6 +1,6 @@
 NB. convert/misc/base64
 NB. Convert to/from base64 representations
-NB. version: 1.0.0
+NB. version: 1.0.1
 
 NB. main functions:
 NB.   tobase64         to base64 representation
