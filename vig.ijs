@@ -5,6 +5,8 @@ NB. ref: http://www.jsoftware.com/jwiki/Addons/convert/misc/vig
 
 NB. defines vig conjunction and related verbs
 
+cocurrent 'z'
+
 NB.*vig c Vigenère cipher
 NB. cipher=. key 0 vig charset plain
 NB. plain=. key 1 vig charset cipher

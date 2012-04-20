@@ -11,6 +11,8 @@ NB.   toascii85     to ascii85 representation
 NB.   fromascii85   from asci855 representation
 NB.
 
+cocurrent 'z'
+
 NB. =========================================================
 NB.*toascii85 v Encode to ascii85 representation
 NB. returns lines of length no more than 75 + LF

@@ -6,6 +6,8 @@ NB. main functions:
 NB.   tobase64         to base64 representation
 NB.   frombase64       from base64 representation
 
+cocurrent 'z'
+
 BASE64=: (a.{~ ,(a.i.'Aa') +/i.26),'0123456789+/'
 
 NB. =========================================================
