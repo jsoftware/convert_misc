@@ -1,7 +1,7 @@
 NB. convert/misc/ascii85
 NB. Convert to/from ascii85 representation
 NB. version: 1.0.0
-NB. The encoding does not begin with <~, though sometimes 
+NB. The encoding does not begin with <~, though sometimes
 NB. this is allowed. However PDF files do not accept this prefix.
 NB. Decoding does support the prefix.
 
@@ -9,7 +9,6 @@ NB. defines:
 NB.
 NB.   toascii85     to ascii85 representation
 NB.   fromascii85   from asci855 representation
-NB.
 
 cocurrent 'z'
 
