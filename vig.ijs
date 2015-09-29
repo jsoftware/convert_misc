@@ -1,7 +1,7 @@
 NB. convert/misc/vig
 NB. Vigenère cipher with optional encoding
 NB. version: 1.0.1
-NB. ref: http://www.jsoftware.com/jwiki/Addons/convert/misc/vig
+NB. ref: http://code.jsoftware.com/wiki/Addons/convert/misc/vig
 
 NB. defines vig conjunction and related verbs
 
