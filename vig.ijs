@@ -28,7 +28,7 @@ vigascii=: vig a.
 NB. base64 encoded
 vig64=: 1 : 0
 :
-  require 'convert\misc\base64'
+  require 'convert/misc/base64'
   mv=. m vigascii
   x (_64 ]\ tobase64@mv)`(mv frombase64@(, -. CRLF,' '"_))@.m y
 )
@@ -36,7 +36,7 @@ vig64=: 1 : 0
 NB. ascii85 encoded
 vig85=: 1 : 0
 :
-  require 'convert\misc\ascii85'
+  require 'convert/misc/ascii85'
   mv=. m vigascii
   x (toascii85@mv)`(mv fromascii85)@.m y
 )
