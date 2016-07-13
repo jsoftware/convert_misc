@@ -15,7 +15,7 @@ NB. ucp        7&u:  convert to wchar
 NB. uucp       u:@(7&u:)  convert to unicode code point
 NB. utf8       8&u:  convert to UTF-8
 NB. ucpcount   counts number of unicode code points (glyphs) in a string.
-
+ 
 cocurrent 'z'
 
 NB. =========================================================
