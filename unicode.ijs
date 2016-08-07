@@ -7,14 +7,14 @@ NB.
 NB. isutf8     check if text is valid UTF-8
 NB. isutf8x    extended version of isutf8
 NB. toutf8     convert text to UTF-8
-NB. ucpindex   convert utf8 index to code point index
-NB. ucpmatch   convert utf8 match to code point match
+NB. ucpindex   convert UTF-8 index to wchar index
+NB. ucpmatch   convert UTF-8 match to wchar match
 NB.
 NB. See also definitions in stdlib.ijs:
-NB. ucp        7&u:  convert to wchar
-NB. uucp       u:@(7&u:)  convert to unicode code point
+NB. ucp        7&u:  convert to UTF-16
+NB. uucp       u:@(7&u:)  convert to UTF-16
 NB. utf8       8&u:  convert to UTF-8
-NB. ucpcount   counts number of unicode code points (glyphs) in a string.
+NB. ucpcount   counts number of wchar in a string when converted to UTF-16
  
 cocurrent 'z'
 
@@ -60,7 +60,7 @@ NB. =========================================================
 NB.*toutf8 v convert text to UTF-8
 NB.
 NB. y may be:
-NB.   valid utf8 - returned unchanged
+NB.   valid UTF-8 - returned unchanged
 NB.   wchar (2-byte characters)
 NB.   text prefixed with UTF-8 byte order mark
 NB.   text prefixed with UTF-16 little endian byte order mark
@@ -86,9 +86,9 @@ end.
 )
 
 NB. =========================================================
-NB.*ucpindex v convert utf8 index to code point index
+NB.*ucpindex v convert UTF-8 index to wchar index
 NB.
-NB. convert indices into a UTF-8 string, into character (code point) indices
+NB. convert indices into a UTF-8 string, into wchar indices
 NB. x = indices
 NB. y = UTF-8 string
 NB.
@@ -107,9 +107,9 @@ len=. msk #@(7&u:);.1 'a',y
 )
 
 NB. =========================================================
-NB.*ucpmatch v convert utf8 match to code point match
+NB.*ucpmatch v convert UTF-8 match to wchar match
 NB.
-NB. convert matches into a UTF-8 string, into character (code point) matches
+NB. convert matches into a UTF-8 string, into wchar matches
 NB. x = matches
 NB. y = UTF-8 string
 NB.
