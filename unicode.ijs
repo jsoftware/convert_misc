@@ -66,7 +66,7 @@ NB.   text prefixed with UTF-8 byte order mark
 NB.   text prefixed with UTF-16 little endian byte order mark
 NB.   ISO 8859-1 (Latin-1) codepage
 toutf8=: 3 : 0
-if. 131072 = 3!:0 y do. 8 u: y return. end.
+if. 2 ~: 3!:0 y do. 8 u: y return. end.
 NB. u8 marker:
 if. (239 187 191 { a.) -: 3 {. y do.
   3 }. y
