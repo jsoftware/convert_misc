@@ -10,11 +10,11 @@ base64.ijs Convert to/from base64 representations
 unicode.ijs Unicode utilities
 )
 
-VERSION=: '1.0.1'
+VERSION=: '1.3.1'
 
 RELEASE=: ''
 
-FOLDER=: 'convert_misc'
+FOLDER=: 'convert/misc'
 
 FILES=: 0 : 0
 md5.ijs
