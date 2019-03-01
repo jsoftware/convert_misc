@@ -81,7 +81,7 @@ elseif. do.
   uni=. 192 128 +"1 [ 0 64 #: msk # val
   val=. val #~ 1 j. msk
   ndx=. I. 127 < val
-  a. {~ uni (ndx +/ 0 1) } val
+  a. {~ uni (<"0 ndx +/ 0 1) } val
 end.
 )
 
