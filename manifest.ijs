@@ -10,7 +10,7 @@ base64.ijs Convert to/from base64 representations
 unicode.ijs Unicode utilities
 )
 
-VERSION=: '1.3.3'
+VERSION=: '1.3.4'
 
 RELEASE=: ''
 
