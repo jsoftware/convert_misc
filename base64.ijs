@@ -1,6 +1,6 @@
 NB. convert/misc/base64
 NB. Convert to/from base64 representations
-NB. version: 1.0.2
+NB. version: 1.0.3
 
 NB. main functions:
 NB. new version only worked for little endian
@@ -54,6 +54,16 @@ else.
 end.
 a=. , |.@:}:("1) _4]\ 2 ic (12 (33 b.) a) (23 b.) b
 if. pad do. (-pad)}.a end.
+)
+
+NB. j902 doesn't need this base64 addon, just for code backward compatibility
+3 : 0''
+try.
+ 3!:10''
+ tobase64=: 3!:10
+ frombase64=: 3!:11
+catch. end.
+EMPTY
 )
 
 NB. =========================================================
