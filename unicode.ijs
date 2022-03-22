@@ -15,7 +15,7 @@ NB. ucp        7&u:  convert to UTF-16
 NB. uucp       u:@(7&u:)  convert to UTF-16
 NB. utf8       8&u:  convert to UTF-8
 NB. ucpcount   counts number of literal2 in a string when converted to UTF-16
- 
+
 cocurrent 'z'
 
 NB. =========================================================
@@ -76,12 +76,7 @@ elseif. (255 254 { a.) -: 2 {. y do.
 NB. 8859-1 codepage:
 elseif. do.
   if. isutf8 y do. y return. end.
-  val=. a. i. y
-  msk=. 127 < val
-  uni=. 192 128 +"1 [ 0 64 #: msk # val
-  val=. val #~ 1 j. msk
-  ndx=. I. 127 < val
-  a. {~ uni (<"0 ndx +/ 0 1) } val
+  8 u: 10 u: y
 end.
 )
 
