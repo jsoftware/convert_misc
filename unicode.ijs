@@ -76,7 +76,7 @@ elseif. (255 254 { a.) -: 2 {. y do.
 NB. 8859-1 codepage:
 elseif. do.
   if. isutf8 y do. y return. end.
-  8 u: 10 u: y
+  8 u: (9&u:) :: (10&u:) y
 end.
 )
 
